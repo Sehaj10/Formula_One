@@ -8,7 +8,7 @@ import pandas as pd
 st.set_page_config(layout="centered",
                    page_icon="F1-logo-removebg-preview.png")
 
-image = Image.open("/Users/sehaj/Downloads/Projects/F1/F1-logo-removebg-preview.png")
+image = Image.open("F1-logo-removebg-preview.png")
 resized_image = image.resize((175, 90))  # Adjust the width and height as desired
 st.image(resized_image)
 

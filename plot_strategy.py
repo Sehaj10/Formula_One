@@ -6,7 +6,7 @@ from PIL import Image
 import pandas as pd
 
 st.set_page_config(layout="centered",
-                   page_icon="/Users/sehaj/Downloads/Projects/F1/F1-logo-removebg-preview.png")
+                   page_icon="F1-logo-removebg-preview.png")
 
 image = Image.open("/Users/sehaj/Downloads/Projects/F1/F1-logo-removebg-preview.png")
 resized_image = image.resize((175, 90))  # Adjust the width and height as desired

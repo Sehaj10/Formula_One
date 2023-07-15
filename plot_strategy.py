@@ -27,7 +27,7 @@ selected_location = st.selectbox("Select the Grand Prix", options=races)
 submit_button = st.button("Submit")
 
 if submit_button:
-    with st.spinner("Loading data..."):
+    with st.spinner("Loading data...might take a few seconds"):
         session = fastf1.get_session(selected_year, selected_location, 'R')
         session.load()  # Load the data for the race session
 

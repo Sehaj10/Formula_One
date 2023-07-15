@@ -1,0 +1,7 @@
+streamlit
+pandas
+fastf1
+plotly
+matplotlib
+Image
+PIL

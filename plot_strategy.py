@@ -8,6 +8,16 @@ import pandas as pd
 st.set_page_config(layout="centered",
                    page_icon="F1-logo-removebg-preview.png")
 
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.write(' ')
+with col2:
+    image = Image.open("F1-logo-removebg-preview.png")
+    resized_image = image.resize((175, 90))
+    st.image(resized_image)
+with col3:
+    st.write(' ')
 image = Image.open("F1-logo-removebg-preview.png")
 resized_image = image.resize((175, 90))  # Adjust the width and height as desired
 st.image(resized_image)

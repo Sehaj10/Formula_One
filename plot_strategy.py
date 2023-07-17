@@ -18,10 +18,6 @@ with col2:
     st.image(resized_image)
 with col3:
     st.write(' ')
-image = Image.open("F1-logo-removebg-preview.png")
-resized_image = image.resize((175, 90))  # Adjust the width and height as desired
-st.image(resized_image)
-
 
 selected_year = st.slider("Select the Year", 2019, 2023)
 

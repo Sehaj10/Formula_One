@@ -89,3 +89,19 @@ if submit_button:
             drivers = [session.get_driver(driver)["Abbreviation"] for driver in drivers]
             data= pd.DataFrame(drivers)
             st.write(data)
+
+footer = "MADE WITH  \u2764\ufe0f  BY SEHAJ "
+# Apply CSS styling to position the footer at the bottom
+footer_style = """
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+    font-size: 13px;
+    color: #FC6600;
+"""
+st.markdown('<p style="{}">{}</p>'.format(footer_style, footer), unsafe_allow_html=True)

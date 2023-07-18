@@ -30,7 +30,7 @@ races= ['Bahrain', 'Saudi Arabia', 'Australia', 'Azerbaijan',
         'United States', 'Abu Dhabi']
 selected_location = st.selectbox("Select the Grand Prix", options=races)
 
-submit_button = st.button("Submit")
+submit_button = st.button("Run")
 
 if submit_button:
     with st.spinner("Loading data...might take a few seconds"):
